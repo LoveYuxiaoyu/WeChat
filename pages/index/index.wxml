@@ -1,0 +1,8 @@
+<!-- index.wxml -->
+<view class="container">
+  <image class="avatar" src="https://img95.699pic.com/photo/50055/5642.jpg_wh300.jpg"></image>
+  <text class="greet" selectable="false" space="false" decode="false">你好，打工人！</text>
+  <view class="goStudy">
+    <text>开启小程序之旅</text>
+  </view>
+</view>
