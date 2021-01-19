@@ -1,8 +1,11 @@
 <!-- index.wxml -->
 <view class="container">
-  <image class="avatar" src="https://img95.699pic.com/photo/50055/5642.jpg_wh300.jpg"></image>
-  <text class="greet" selectable="false" space="false" decode="false">你好，打工人！</text>
-  <view class="goStudy">
+  <button class="getInfo" open-type="getUserInfo" bindgetuserinfo="handleUserInfo" hidden="{{isHidden}}">
+    获取用户授权
+  </button>
+  <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+  <text class="greet">你好 {{userInfo.nickName}}</text>
+  <navigator url="/pages/list/list" open-type="switchTab" class="goStudy" hidden="{{!isHidden}}">
     <text>开启小程序之旅</text>
-  </view>
+  </navigator>
 </view>

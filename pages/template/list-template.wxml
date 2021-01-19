@@ -1,0 +1,17 @@
+<template name="listTpl">
+  <view class="tplCont">
+    <view class="template-title">
+      <image src="{{avatar}}"></image>
+      <text>{{date}}</text>
+    </view>
+    <view class="template-desc">{{title}}</view>
+    <image class="contImg" src="{{detail_img}}"></image>
+    <view class="content">{{detail_content}}</view>
+    <view class="collection">
+      <image src="/images/icon/star.png"></image>
+      <text>{{love_count}}</text>
+      <image src="/images/icon/view.png"></image>
+      <text>{{attention_count}}</text>
+    </view>
+  </view>
+</template>
